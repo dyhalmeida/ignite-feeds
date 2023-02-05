@@ -1,0 +1,86 @@
+.comment {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.comment > img {
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+
+.container {
+  flex: 1;
+}
+
+.content {
+  background: var(--gray-700);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.content header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.content header > div strong {
+  display: block;
+  font-size: .875rem;
+  line-height: 1.6;
+}
+
+.content header > div time {
+  display: block;
+  font-size: .75rem;
+  line-height: 1.6;
+  color: var(--gray-400);
+}
+
+.content header > button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-400);
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 2px;
+}
+
+
+.content header > button:hover {
+  color: var(--red-500);
+}
+
+.content p {
+  margin-top: 1rem;
+  color: var(--gray-300);
+}
+
+.container footer {
+  margin-top: 1rem;
+}
+
+.container footer button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-400);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.container footer button:hover {
+  color: var(--green-300);
+}
+
+.container footer button svg {
+  margin-right: .5rem;
+}
+
+.container footer button span::before {
+  content: "\2022";
+  padding: 0 0.25rem ;
+}
